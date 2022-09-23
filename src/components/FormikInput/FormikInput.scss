@@ -1,0 +1,35 @@
+.formik-input-container {
+	display: flex;
+	width: inherit;
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.formik-label {
+	display: flex;
+	align-items: center;
+	height: 20px;
+	margin-bottom: 0.5rem;
+}
+
+.formik-label-input-horizontal {
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 1rem;
+	border-bottom: none;
+}
+
+.formik-label-input-vertical {
+	flex-direction: column;
+}
+
+.input-required {
+	color: rgb(255, 0, 0);
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.error {
+	color: rgb(255, 0, 0);
+	font-size: 0.8rem;
+	margin: 1rem 0;
+}

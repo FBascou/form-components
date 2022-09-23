@@ -1,0 +1,132 @@
+.formik-multi-select-container {
+  position: relative;
+  display: flex;
+  width: inherit;
+  min-height: 1.5em;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.formik-multi-select-horizontal {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  // border-bottom: none;
+}
+
+.formik-multi-select-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.formik-multi-select {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.formik-label {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.formik-multi-select-value {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.formik-multi-select-options {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: none;
+  max-height: 15em;
+  overflow-y: auto;
+  border: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  left: 0;
+  top: calc(100% + 0.25em);
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+}
+
+.formik-multi-select-options.show {
+  display: block;
+}
+
+.formik-multi-select-option {
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+.formik-multi-select-option.selected {
+  background-color: lightgray;
+}
+
+.formik-multi-select-option.highlighted {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.formik-multi-select-close-icon {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.formik-multi-select-close-icon:focus,
+.formik-multi-select-close-icon:hover {
+  color: lightgray;
+}
+
+.formik-multi-select-divider {
+  background-color: lightgray;
+  width: 1px;
+  align-self: stretch;
+}
+
+.formik-multi-select-drop-down-icon {
+  cursor: pointer;
+}
+
+.formik-multi-select-option-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+
+.formik-multi-select-option-badge:focus,
+.formik-multi-select-option-badge:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.formik-multi-select-remove-svg {
+  transform: scale(0.7);
+}
+
+.select-required {
+  color: rgb(255, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
